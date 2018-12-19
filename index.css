@@ -1,0 +1,180 @@
+.item1 { 
+  grid-area: payperiod; 
+}
+
+ .item1 form {
+  width: 35vw;
+  margin: 0 auto;
+ }
+
+ .item1 input {
+  padding: 7px 20px;
+  margin: 8px auto;
+  border-radius: 5px;
+  border: solid 1px #999;
+ }
+
+.item1a { grid-area: team; }
+
+.item1a form {
+  width: 15vw;
+  margin: 0 auto;
+}
+
+.item1a select {
+  padding: 7px 20px;
+  margin: 8px auto;
+  border-radius: 5px;
+  border: solid 1px #999;
+}
+
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+.item4 button {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.item5 { 
+  grid-area: requested;
+}
+.item5a { 
+  grid-area: towp;
+   
+}
+.item5b { 
+  grid-area: overtime; 
+
+}
+
+.layout-grid-main {
+  display: grid;
+  grid-template-areas:
+    'payperiod payperiod payperiod team team team'
+    'main main main right right right'
+    'requested requested towp towp overtime overtime';
+  grid-template-rows: 33.33vh 33.33vh 33.33vh;
+  grid-gap: 10px;
+  background-color: white;
+  border-radius: 7px;
+  
+}
+
+.layout-grid-main > div {
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 10px #d9d9d9;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.week-grid {
+  display: inline-grid;
+  grid-template-areas: 
+    'monday tuesday wednesday thursday friday saturday sunday';
+  grid-gap: 1px;
+  font-size: 15px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 5px;
+  grid-template-rows: 11vh;
+  border: solid 1px #999;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw
+}
+
+.monday { grid-area: monday; }
+.tuesday { grid-area: tuesday; }
+.wednesday { grid-area: wednesday; }
+.thursday { grid-area: thursday; }
+.friday { grid-area: friday; }
+.saturday { grid-area: saturday; }
+.sunday { grid-area: sunday; }
+
+input[type=number] {
+  width: 40%;
+  padding: 15px 5px;
+  margin: auto auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: list-item;
+  font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.week-grid input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  /*float: left;*/
+  display: block;
+  /*padding: 0;*/
+  margin: 0 auto;
+  /*padding-left: 20px;*/
+  border: 1px solid #111;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  display: block;
+  margin: 10 auto 5vh;
+}
+
+.output-hours {
+  background-color: white;
+  width: 5vw;
+  height: 9vh;
+  margin: 15px auto 20px;
+  border: solid 1px #999;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.timeoff {
+  background-color: white;
+  width: 10vw;
+  height: 10vh;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: solid 1px #999;
+}
+
+.towp {
+  background-color: white;
+  border-radius: 5px;
+  width: 10vw;
+  height: 10vh;
+  margin: 0 auto;
+  border: solid 1px #999;
+}
+
+.overtime {
+  background-color: white;
+  width: 10vw;
+  height: 10vh;
+  margin: 15px auto 20px;
+  border: solid 1px #999;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.submit {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+}
