@@ -19,5 +19,5 @@ function calculate() {
 }
 
 function submit() {
-	return true;
+	alert("Timesheet Submitted!");
 }
